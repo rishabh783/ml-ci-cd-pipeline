@@ -9,7 +9,8 @@ import numpy as np
 MODEL_PATH = os.getenv('MODEL_PATH', 'model/iris_model.pkl')
 
 #--App
-app = Flask(_name_)
+app = Flask(__name__)
+
 
 #load one at startuo
 try:
